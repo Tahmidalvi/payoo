@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payoo Home page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payoo Home page</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <h1>Welcome to Home page</h1>
+
+  <main class="flex justify-center">
+    <div style="border: 2px solid white; margin-top: 15px ;">
+
+    </div>
+    <div class="mockup-phone">
+      <div class="camera"></div>
+      <div class="display">
+        <div class="artboard artboard-demo phone-3">
+          <!-- available balance -->
+          <div class="stats shadow">
+            <div class="stat">
+              <div class="stat-value">9400</div>
+              <div class="stat-desc">Available Balance</div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <!-- user action button -->
+          <div>
+            <button id="btn-add-money" class="btn btn-lg">Add money</button>
+            <button class="btn btn-lg">Cash out</button>
+          </div>
+          <div class="divider"></div>
+          <!-- add money from start -->
+          <div>
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Amount</span>
+                </label>
+                <input type="text" id="input-add-money" placeholder="Amount" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin Number</span>
+                </label>
+                <input type="password" id="input-pin-number" placeholder="pin-number" autocomplete="off" class="input input-bordered" required />
+              </div>
+              <div class="form-control mt-6">
+                <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+              </div>
+            </form>
+          </div>
+          <!-- add money from end -->
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/home.js"></script>
 </body>
+
 </html>

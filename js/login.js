@@ -31,13 +31,12 @@
 
 document.getElementById('button-login').addEventListener('click', function(event){
     event.preventDefault();
-
     //get phone number and pin
     const phoneNumber = document.getElementById('phone-number').value;
     const pinNumber = document.getElementById('pin-number').value;
     // console.log(phoneNumber,pinNumber);
     // bad way to validate
-    if(phoneNumber=== '2589' && pinNumber === '1234'){
+    if(phoneNumber=== '1234' && pinNumber === '1234'){
         console.log('you are logges in')
         window.location.href= '/home.html';
     }
